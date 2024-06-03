@@ -13,10 +13,9 @@ export const Navbar = () => {
             <div className="links">
                 <a href="Home">Home</a>
                 <a href="Menu">Cardápio</a>
-                <a href="Categorias">Categorias</a>
                 <a href="Promocoes">Promoções</a>
                 <a href="Promocoes">Como Funciona</a>
-                <a href="Sobre">Sobre Nós</a>
+                <a href="Sobre">Quem Somos</a>
             </div>
             <div className="search">
                 <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#fb6d48">

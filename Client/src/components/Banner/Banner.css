@@ -5,13 +5,20 @@
     max-width: 100%;
     height: auto;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 10px 20px;
 }
 
 .image {
     width: 100%;
     height: auto;
     border-radius: 15px;
+    transition: box-shadow 0.3s ease;
+}
+
+.image:hover {
+    -webkit-box-shadow: 0px 15px 5px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 15px 5px -7px rgba(0,0,0,0.75);
+    box-shadow: 0px 15px 5px -7px rgba(0,0,0,0.75);
 }
 
 @media (max-width: 1440px) {
