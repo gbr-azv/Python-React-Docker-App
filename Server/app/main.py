@@ -24,6 +24,8 @@ origins = [
     "https://localhost",
     "http://localhost:8000",
     "https://localhost:8000",
+    "http://localhost:3000",  # Adicione esta linha para permitir a origem do React
+    "https://localhost:3000"
 ]
 
 # Implement CORS in the application
