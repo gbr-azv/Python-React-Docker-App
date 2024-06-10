@@ -10,7 +10,7 @@
     padding: 30px 50px;
     box-sizing: border-box;
     border-radius: 10px;
-    background-image: url('http://127.0.0.1:8080/cadastro.png');
+    background-image: url('http://192.168.15.15:8080/cadastro.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -52,4 +52,23 @@
     background-color: #c6c6c6;
     color: #fff;
     cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    
+    .cards {
+        width: 100%;
+        max-width: 100%;
+        padding: 0px 20px;
+        background-position:right;
+    }
+
+    .header3, .header1, .paragraph  {
+        margin: 0;
+        padding: 0;
+    }
+
+    .paragraph {
+        margin-bottom: 140px;
+    }
 }

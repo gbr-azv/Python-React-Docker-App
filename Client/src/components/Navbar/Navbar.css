@@ -67,9 +67,8 @@
 }
 
 .icons a:hover {
-    -webkit-box-shadow: 10px 10px 18px -8px rgba(251,109,72,1);
-    -moz-box-shadow: 10px 10px 18px -8px rgba(251,109,72,1);
-    box-shadow: 10px 10px 18px -8px rgba(251,109,72,1); 
+    background-color: #fb6d48;
+    border: 1px solid #000;
 }
 
 .menu {
@@ -81,6 +80,10 @@
 }
 
 @media (max-width: 1440px) {
+
+    .navbar {
+        margin: 15px 0px;
+    }
 
     .links a {
         font-size: 16px;
@@ -108,7 +111,7 @@
     }
     
     .icons a {
-        padding: 10px 5px;
+        padding: 0px 5px;
     }
 
     .cart {
@@ -123,37 +126,6 @@
 }
 
 @media (max-width: 480px) {
-
-    .navbar {
-        justify-content: space-around;
-    }
-
-    .search {
-        display: none;
-    }
-
-    .icons {
-        display: none;
-    }
-
-    .links {
-        display: none;
-    }
-    
-    .logo {
-        width: 160px;
-    }
-
-    .menu {
-        display: flex;
-    }
-
-    .search-mobile {
-        display: flex;
-    }
-}
-
-@media (max-width: 844px) { 
 
     .navbar {
         justify-content: space-around;

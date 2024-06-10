@@ -33,3 +33,23 @@
         height: 400px;
     }
 }
+
+@media (max-width: 480px) {
+
+    .logon-inputs {
+        border-right: none;
+        width: 95%;
+        margin-left: 30px;
+    }
+
+    .oauth-buttons {
+        width: 100%;
+    }
+
+    .logon-buttons {
+        border-top: 0.5px solid #fff;;
+        padding-top: 40px;
+        width: 90%;
+        gap: 0px;
+    }
+}

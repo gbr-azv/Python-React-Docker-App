@@ -17,10 +17,10 @@ function Home() {
         >
         </Card>
         <Card
-          header3="Ainda não tem cadastro?"
-          header1="Cadastre-se Agora"
-          paragraph="Eobtenha 10% de desconto na primeira compra!"
-          button="Cadastrar"
+          header3="Promoções rolando no App!"
+          header1="Coma bem e barato"
+          paragraph="Produtos com até 20% OFF!"
+          button="Conferir"
         >
         </Card>
       </Wrapper>

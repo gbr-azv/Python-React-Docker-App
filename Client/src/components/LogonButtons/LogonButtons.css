@@ -43,6 +43,14 @@
 @media (max-width: 1440px){
 
     .logon-button {
-        width:75%;
+        width:90%;
+    }
+}
+
+@media (max-width: 480px){
+
+    .logon-button {
+        width:90%;
+        justify-content: center;
     }
 }
