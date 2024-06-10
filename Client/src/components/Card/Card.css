@@ -10,7 +10,6 @@
     padding: 30px 50px;
     box-sizing: border-box;
     border-radius: 10px;
-    background-image: url('http://192.168.15.15:8080/cadastro.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,6 +21,11 @@
     -webkit-box-shadow: 10px 10px 18px -8px rgba(251,109,72,1);
     -moz-box-shadow: 10px 10px 18px -8px rgba(251,109,72,1);
     box-shadow: 10px 10px 18px -8px rgba(251,109,72,1); 
+}
+
+.header3, .header1, .paragraph  {
+    margin: 0;
+    padding: 0;
 }
 
 .header3 {
@@ -36,6 +40,7 @@
 
 .paragraph {
     font-size: 16px;
+    margin-bottom: 100px;
 }
 
 .button {
@@ -54,6 +59,14 @@
     cursor: pointer;
 }
 
+.cadastro {
+    background-image: url('http://192.168.15.15:8080/cadastro.png');
+}
+
+.promo {
+    background-image: url('http://192.168.15.15:8080/promo-mobile.png');
+}
+
 @media (max-width: 480px) {
     
     .cards {
@@ -63,9 +76,12 @@
         background-position:right;
     }
 
-    .header3, .header1, .paragraph  {
-        margin: 0;
-        padding: 0;
+    .cadastro {
+        background-image: url('http://192.168.15.15:8080/cadastro-mobile.png');
+    }
+
+    .promo {
+        background-image: url('http://192.168.15.15:8080/promo-mobile.png');
     }
 
     .paragraph {

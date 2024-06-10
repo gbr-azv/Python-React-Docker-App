@@ -14,6 +14,7 @@ function Home() {
           header1="Cadastre-se Agora"
           paragraph="E obtenha 10% de desconto na primeira compra!"
           button="Cadastrar"
+          backImage="cadastro"
         >
         </Card>
         <Card
@@ -21,6 +22,7 @@ function Home() {
           header1="Coma bem e barato"
           paragraph="Produtos com até 20% OFF!"
           button="Conferir"
+          backImage="promo"
         >
         </Card>
       </Wrapper>
