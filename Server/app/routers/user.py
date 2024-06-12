@@ -6,7 +6,7 @@ from ..database import get_db
 
 # Organizes and modularizes the application, grouping related routes in a single location
 router = APIRouter(
-    prefix="/user",
+    prefix="/api/user",
     tags=['User']
 )
 
