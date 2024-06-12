@@ -39,13 +39,13 @@ app.add_middleware(
 
 ############################## ROUTES ##############################
 
-# [GET] Requests The Restaurant's Home Page
-@app.get("/")
-def home():
-    return {"Message":"Welcome to Joe's Restaurant Delivery"}
+# # [GET] Requests The Restaurant's Home Page
+# @app.get("/api")
+# def home():
+#     return {"Message":"Welcome to Joe's Restaurant Delivery"}
 
 # [GET] Requests The Restaurant Menu
-@app.get("/menu", response_model=List[schemas.MenuResponse])
+@app.get("/api/menu", response_model=List[schemas.MenuResponse])
 def get_menu(db: Session = Depends(get_db)):
     menu = db.query(models.Product).all()
     return menu

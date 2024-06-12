@@ -1,0 +1,61 @@
+version: '3'
+services:
+  nginx:
+    restart: always
+    image:
+      'nginx:latest'
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./Nginx
+    ports:
+      - 3050:3051
+    depends_on:
+      - api
+      - client
+  api:
+    build:
+      dockerfile: Dockerfile
+      context: ./Server
+    depends_on:
+      - postgres
+    ports:
+      - 8000:8000
+    volumes:
+      - ./Server:/usr/src/app:ro
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    environment:
+      - DATABASE_HOSTNAME=${DB_HOSTNAME}
+      - DATABASE_PORT=${DB_PORT}
+      - DATABASE_PASSWORD=${DB_PASSWORD}
+      - DATABASE_NAME=${DB_NAME}
+      - DATABASE_USERNAME=${DB_USERNAME}
+      - SECRET_KEY=${SECRET_KEY}
+      - PRIVATE_KEY=${PRIVATE_KEY}
+      - PUBLIC_KEY=${PUBLIC_KEY}
+      - ALGORITHM=${ALGORITHM}
+      - ACCESS_TOKEN_EXPIRE_MINUTES=${ACCESS_TOKEN_EXPIRE_MINUTES}
+      - ACCESS_TOKEN_EXPIRES_MINUTES=${ACCESS_TOKEN_EXPIRES_MINUTES}
+      - REFRESH_TOKEN_EXPIRES_MINUTES=${REFRESH_TOKEN_EXPIRES_MINUTES}
+      - JWT_ALGORITHM=${JWT_ALGORITHM}
+      - CLIENT_ORIGIN=${CLIENT_ORIGIN}
+  client:
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./Client
+    volumes:
+      - /app/node_modules
+      - ./Client:/app
+    ports:
+      - 3000:3000
+    command: npm start
+  postgres:
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=${DB_NAME}
+    volumes:
+      - postgres-db:/var/lib/postgresql/data
+volumes:
+    postgres-db:
