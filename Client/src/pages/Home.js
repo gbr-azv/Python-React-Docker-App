@@ -2,6 +2,7 @@ import Slider from '../components/Slider';
 import Banner from '../components/Banner';
 import Wrapper from '../components/Wrapper';
 import Card from '../components/Card';
+import Footer from '../components/Footer';
 
 function Home() {
   return (
@@ -26,6 +27,10 @@ function Home() {
         >
         </Card>
       </Wrapper>
+      <Footer 
+        backFooter="home-footer"
+        where="home"
+      />
     </div>
   );
 }
