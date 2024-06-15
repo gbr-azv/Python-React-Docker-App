@@ -45,7 +45,7 @@ app.add_middleware(
 #     return {"Message":"Welcome to Joe's Restaurant Delivery"}
 
 # [GET] Requests The Restaurant Menu
-@app.get("/api/menu", response_model=List[schemas.MenuResponse])
+@app.get("/menu", response_model=List[schemas.MenuResponse])
 def get_menu(db: Session = Depends(get_db)):
     menu = db.query(models.Product).all()
     return menu

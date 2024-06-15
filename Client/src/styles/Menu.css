@@ -1,0 +1,19 @@
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    flex-wrap: wrap;
+    height: auto;
+    background-color: #c6c6c6;
+    margin-top: 30px;
+    padding: 15px;
+    gap: 15px;
+}
+
+.menu-products-container {
+    background-color: #c6c6c6;
+}
+
+.menu-footer-container {
+    width: 100%;
+}

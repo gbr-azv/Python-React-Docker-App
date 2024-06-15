@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 
 import Home from './pages/Home';
 import Logon from './pages/Logon';
+import Menu from './pages/Menu';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route exact path='/' Component={Home} />
         <Route path='/logon' Component={Logon} />
+        <Route path='/cardapio' Component={Menu} />
       </Routes>
     </Router>
   );

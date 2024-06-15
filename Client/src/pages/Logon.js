@@ -8,7 +8,7 @@ import Input from '../components/Input';
 import LogonButtons from '../components/LogonButtons';
 
 import { faFacebook, faTwitter, faGoogle } from '@fortawesome/free-brands-svg-icons';
-import { faPaperPlane  } from '@fortawesome/free-solid-svg-icons';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 function Logon() {
 

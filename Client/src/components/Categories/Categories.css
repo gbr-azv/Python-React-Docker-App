@@ -39,19 +39,19 @@
 }
 
 .hamburgueres {
-    background-image: url('http://192.168.15.15:8080/categories-burguer.webp');
+    background-image: url('http://192.168.15.14:8080/categories-burguer.webp');
 }
 
 .sushi {
-    background-image: url('http://192.168.15.15:8080/categories-sushi.webp');
+    background-image: url('http://192.168.15.14:8080/categories-sushi.webp');
 }
 
 .massas {
-    background-image: url('http://192.168.15.15:8080/categories-pasta.webp');
+    background-image: url('http://192.168.15.14:8080/categories-pasta.webp');
 }
 
 .drinks {
-    background-image: url('http://192.168.15.15:8080/categories-drinks.webp');
+    background-image: url('http://192.168.15.14:8080/categories-drinks.webp');
 }
 
 .gradient {

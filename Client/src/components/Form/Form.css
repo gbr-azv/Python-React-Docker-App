@@ -9,7 +9,7 @@
     margin-top: 30px;
     padding-top: 50px;
     background-color: #c6c6c6;
-    background-image: url('http://192.168.15.15:8080/logon.png');
+    background-image: url('http://192.168.15.14:8080/logon.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -40,7 +40,7 @@
         align-items: start;
         height: 650px;
         margin-top: 5px;
-        background-image: url('http://192.168.15.15:8080/logon.png');
+        background-image: url('http://192.168.15.14:8080/logon.png');
         padding-top: 20px;
     }
 }
@@ -61,7 +61,7 @@
         align-items: start;
         height: auto;
         margin-top: 5px;
-        background-image: url('http://192.168.15.15:8080/logon.png');
+        background-image: url('http://192.168.15.14:8080/logon.png');
         padding-top: 20px;
     }
 }
