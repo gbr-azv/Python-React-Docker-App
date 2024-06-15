@@ -1,6 +1,6 @@
 from uuid import uuid4
 #
-from sqlalchemy import Column, Integer, String, DECIMAL, TIMESTAMP, ForeignKey, Text
+from sqlalchemy import Column, Integer, String, DECIMAL, TIMESTAMP, ForeignKey, Text, Boolean
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import relationship
 from sqlalchemy.sql import func
@@ -35,6 +35,8 @@ class Product(Base):
     name = Column(String(100), nullable=False)
     description = Column(Text, nullable=False)
     price = Column(DECIMAL(10, 2), nullable=False)
+    category = Column(String(100), nullable=True)
+    isOnOffer = Column(Boolean, nullable=True)
 
 class Purchase(Base):
     __tablename__ = 'purchase'

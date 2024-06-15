@@ -11,7 +11,8 @@ from app.config import settings
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
 config = context.config
-config.set_main_option('sqlalchemy.url', f'{settings.SQLALCHEMY_DATABASE_URL}?client_encoding=utf8')
+config.set_main_option('sqlalchemy.url', (f'postgresql+psycopg2://{settings.DB_USERNAME}:{settings.DB_PASSWORD}@{settings.DB_HOSTNAME}:'
+                                          f'{settings.DB_PORT}/{settings.DB_NAME}?client_encoding=utf8'))
 
 # Interpret the config file for Python logging.
 # This line sets up loggers basically.
