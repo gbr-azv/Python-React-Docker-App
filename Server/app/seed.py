@@ -14,41 +14,50 @@ def insert_initial_data():
         
         # Restaurant menu, automatically inserted, when the first time the tables are initialized
         product_data = [
-            ('Grilled Salmon', 'Freshly grilled salmon served with lemon butter sauce, accompanied by roasted vegetables and quinoa.', 20.99),
-            ('Chicken Alfredo Pasta', 'Creamy Alfredo sauce with grilled chicken served over fettuccine pasta, garnished with parmesan cheese.', 16.99),
-            ('Vegetarian Stir-Fry', 'Colorful stir-fried vegetables with tofu, served on a bed of steamed jasmine rice.', 14.99),
-            ('Beef Tenderloin Steak', 'Juicy beef tenderloin steak cooked to perfection, served with mashed potatoes and sautéed spinach.', 28.99),
-            ('Shrimp Scampi', 'Succulent shrimp sautéed in garlic butter and white wine, served over a bed of linguine pasta.', 22.99),
-            ('Mushroom Risotto', 'Creamy mushroom risotto made with Arborio rice, topped with truffle oil and parmesan shavings.', 18.99),
-            ('Pesto Chicken Salad', 'Grilled pesto-marinated chicken breast served on a bed of mixed greens with cherry tomatoes and balsamic vinaigrette.', 12.99),
-            ('Eggplant Parmesan', 'Layers of breaded and baked eggplant with marinara sauce and melted mozzarella cheese, served with spaghetti.', 17.99),
-            ('Teriyaki Glazed Tofu Bowl', 'Teriyaki glazed tofu served with stir-fried vegetables and brown rice.', 15.99),
-            ('BBQ Pulled Pork Sandwich', 'Slow-cooked pulled pork in tangy barbecue sauce, served on a toasted brioche bun with coleslaw.', 13.99),
-            ('Classic Mojito', 'Freshly muddled mint and lime, mixed with white rum and soda water.', 8.99),
-            ('Berry Blast Smoothie', 'A refreshing blend of mixed berries, banana, yogurt, and a touch of honey.', 6.99),
-            ('Iced Caramel Macchiato', 'Espresso poured over iced milk, sweetened with caramel syrup.', 4.99),
-            ('Mango Tango Lemonade', 'Fresh mango puree combined with lemonade, served over ice.', 5.99),
-            ('Classic Old Fashioned', 'A timeless cocktail made with bourbon, sugar, and bitters, garnished with an orange twist.', 10.99),
-            ('Green Tea Matcha Latte', 'Steamed milk mixed with high-quality matcha green tea powder.', 5.99),
-            ('Pineapple Coconut Cooler', 'Pineapple juice and coconut cream blended with ice for a tropical treat.', 7.99),
-            ('Sparkling Raspberry Lemonade', 'Fizzy lemonade with a burst of raspberry flavor, served with crushed ice.', 4.99),
-            ('Espresso Martini', 'A sophisticated mix of vodka, coffee liqueur, and freshly brewed espresso.', 12.99),
-            ('Strawberry Basil Infused Water', 'Fresh strawberries and basil leaves infused in cold water for a refreshing non-alcoholic option.', 3.99),
-            ('Chocolate Lava Cake', 'Warm chocolate cake with a gooey molten center, served with a scoop of vanilla ice cream.', 7.99),
-            ('New York Cheesecake', 'Creamy cheesecake on a graham cracker crust, topped with a choice of fruit compote.', 6.99),
-            ('Tiramisu', 'Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.', 8.99),
-            ('Key Lime Pie', 'Tangy key lime filling in a buttery graham cracker crust, topped with whipped cream.', 5.99),
-            ('Apple Crumble', 'Baked apple slices with cinnamon and brown sugar, topped with a crispy crumble and vanilla ice cream.', 6.99),
-            ('Red Velvet Cupcake', 'Moist red velvet cupcake with cream cheese frosting and a sprinkle of chocolate shavings.', 4.99),
-            ('Banoffee Pie', 'Banana and toffee filling in a buttery pie crust, topped with whipped cream.', 7.99),
-            ('Lemon Sorbet', 'Refreshing lemon sorbet served in a hollowed-out lemon half.', 4.99),
-            ('Chocolate Dipped Strawberries', 'Fresh strawberries dipped in rich dark chocolate.', 9.99),
-            ('Panna Cotta with Raspberry Coulis', 'Silky vanilla panna cotta topped with a vibrant raspberry coulis.', 6.99)
+            ('Sushi de Caranguejo Picante', 'Imitação de carne de caranguejo com maionese picante envolta em nori e arroz de sushi.', 20.00, 'sushi', True),
+            ('California Roll', 'Imitação de carne de caranguejo, abacate e pepino, enrolados em arroz de sushi e nori.', 18.00, 'sushi', False),
+            ('Salmon and Avocado Roll', 'Salmão fresco e abacate, enrolados em nori e arroz de sushi.', 22.00, 'sushi', False),
+            ('Mango Tiger Sushi Roll', 'Manga, abacate e kani enrolados em arroz de sushi e nori.', 24.00, 'sushi', False),
+            ('Dynamite Roll', 'Tempura de camarão, pepino e abacate com molho picante.', 25.00, 'sushi', False),
+            ('Rainbow Roll', 'Uma combinação colorida de peixes frescos e abacate.', 27.00, 'sushi', False),
+            ('Spicy Tuna Roll', 'Atum picante com pepino e nori.', 23.00, 'sushi', False),
+            ('Dragon Roll', 'Tempura de camarão, abacate e pepino com uma cobertura de enguia.', 28.00, 'sushi', False),
+            ('Philadelphia Roll', 'Salmão, queijo creme e pepino.', 21.00, 'sushi', True),
+            
+            ('Classic Cheeseburger', 'Hambúrguer de carne bovina com queijo cheddar, alface, tomate e molho especial.', 28.00, 'hamburguer', False),
+            ('BBQ Bacon Burger', 'Hambúrguer de carne bovina com queijo cheddar, bacon, cebola caramelizada e molho barbecue.', 32.00, 'hamburguer', True),
+            ('Mushroom Swiss Burger', 'Hambúrguer de carne bovina com queijo suíço, cogumelos salteados e maionese.', 30.00, 'hamburguer', False),
+            ('Spicy Jalapeño Burger', 'Hambúrguer de carne bovina com queijo pepper jack, jalapeños e maionese picante.', 29.00, 'hamburguer', False),
+            ('Veggie Burger', 'Hambúrguer vegetariano com alface, tomate, cebola roxa e maionese.', 26.00, 'hamburguer', True),
+            ('Blue Cheese Burger', 'Hambúrguer de carne bovina com queijo azul, cebola caramelizada e rúcula.', 33.00, 'hamburguer', False),
+            ('Texas Burger', 'Hambúrguer de carne bovina com queijo cheddar, bacon, alface e molho barbecue.', 31.00, 'hamburguer', False),
+            ('Hawaiian Burger', 'Hambúrguer de carne bovina com abacaxi grelhado, queijo suíço e molho teriyaki.', 34.00, 'hamburguer', False),
+            ('Turkey Burger', 'Hambúrguer de peru com queijo suíço, alface e maionese.', 27.00, 'hamburguer', False),
+            
+            ('Mojito', 'Rum, hortelã, suco de limão, açúcar e água com gás.', 18.00, 'drinks', False),
+            ('Caipirinha', 'Cachaça, limão, açúcar e gelo.', 16.00, 'drinks', True),
+            ('Pina Colada', 'Rum, creme de coco e suco de abacaxi.', 20.00, 'drinks', False),
+            ('Margarita', 'Tequila, suco de limão e licor de laranja.', 19.00, 'drinks', False),
+            ('Mai Tai', 'Rum, suco de laranja, suco de abacaxi, grenadine e angostura.', 22.00, 'drinks', False),
+            ('Cosmopolitan', 'Vodka, licor de laranja, suco de cranberry e suco de limão.', 21.00, 'drinks', False),
+            ('Old Fashioned', 'Bourbon ou centeio, açúcar, Angostura e um toque de água.', 23.00, 'drinks', False),
+            ('Manhattan', 'Whiskey, vermute doce e Angostura.', 24.00, 'drinks', True),
+            ('Negroni', 'Gin, vermute doce e Campari.', 22.00, 'drinks', False),
+            
+            ('Spaghetti Carbonara', 'Espaguete com molho de ovo, queijo parmesão, pancetta e pimenta-do-reino.', 28.00, 'massas', True),
+            ('Lasagna Bolognese', 'Lasanha com camadas de molho bolonhesa, bechamel e queijo.', 32.00, 'massas', True),
+            ('Fettuccine Alfredo', 'Fettuccine com molho cremoso de queijo parmesão e manteiga.', 26.00, 'massas', False),
+            ('Penne Arrabbiata', 'Penne com molho de tomate picante e manjericão.', 24.00, 'massas', False),
+            ('Ravioli di Ricotta e Spinaci', 'Ravioli recheado com ricota e espinafre, servido com molho de tomate e manjericão.', 30.00, 'massas', False),
+            ('Spaghetti Bolognese', 'Espaguete com molho bolonhesa e queijo parmesão.', 27.00, 'massas', False),
+            ('Gnocchi al Pesto', 'Nhoque com molho pesto e parmesão.', 25.00, 'massas', False),
+            ('Tagliatelle al Funghi', 'Tagliatelle com molho cremoso de cogumelos.', 29.00, 'massas', False),
+            ('Linguine ai Frutti di Mare', 'Linguine com frutos do mar em molho de tomate.', 31.00, 'massas', False)
         ]
 
         # Iterates over the data and insert it into the 'product' table
-        for name, description, price in product_data:
-            new_product = Product(name=name, description=description, price=price)
+        for name, description, price, category, isOnOffer in product_data:
+            new_product = Product(name=name, description=description, price=price, category=category, isOnOffer=isOnOffer)
             session.add(new_product)
 
         # Commits Changes

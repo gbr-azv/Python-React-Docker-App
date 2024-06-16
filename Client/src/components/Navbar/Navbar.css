@@ -49,6 +49,12 @@
     font-style: normal;
 }
 
+.search button {
+    border: none;
+    cursor: pointer;
+    background-color: #E8EAED;
+}
+
 .logo {
     width: 240px;
 }

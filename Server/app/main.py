@@ -1,12 +1,9 @@
-from typing import List
-#
-from fastapi import FastAPI, Depends
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from sqlalchemy.orm import Session
 #
-from . import models, schemas
-from .database import engine, get_db
-from .routers import order, user, auth
+from . import models
+from .database import engine
+from .routers import order, user, auth, menu
 from .seed import insert_initial_data
 
 # Called to create the tables in the database based on the defined models
@@ -24,7 +21,7 @@ origins = [
     "https://localhost",
     "http://localhost:8000",
     "https://localhost:8000",
-    "http://localhost:3000",  # Adicione esta linha para permitir a origem do React
+    "http://localhost:3000",  # Allows React
     "https://localhost:3000"
 ]
 
@@ -40,15 +37,9 @@ app.add_middleware(
 ############################## ROUTES ##############################
 
 # # [GET] Requests The Restaurant's Home Page
-# @app.get("/api")
+# @app.get("/")
 # def home():
-#     return {"Message":"Welcome to Joe's Restaurant Delivery"}
-
-# [GET] Requests The Restaurant Menu
-@app.get("/api/menu", response_model=List[schemas.MenuResponse])
-def get_menu(db: Session = Depends(get_db)):
-    menu = db.query(models.Product).all()
-    return menu
+#     return {"Message":"Welcome"}
 
 # Includes routes from another router, in the main application
 # Which are in: "routers/order.py", "routers/user.py", and "routers/auth.py"'
@@ -56,3 +47,4 @@ def get_menu(db: Session = Depends(get_db)):
 app.include_router(order.router)
 app.include_router(user.router)
 app.include_router(auth.router)
+app.include_router(menu.router)
