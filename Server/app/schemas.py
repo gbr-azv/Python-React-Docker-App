@@ -16,6 +16,7 @@ class MenuResponse(BaseModel):
     description: str
     price: float
     product_id: int
+    image: str
 
 class OrderDetails(BaseModel):
     name: str

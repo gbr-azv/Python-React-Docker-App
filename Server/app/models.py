@@ -37,6 +37,7 @@ class Product(Base):
     price = Column(DECIMAL(10, 2), nullable=False)
     category = Column(String(100), nullable=True)
     isOnOffer = Column(Boolean, nullable=True)
+    image = Column(String(100), nullable=True)
 
 class Purchase(Base):
     __tablename__ = 'purchase'
