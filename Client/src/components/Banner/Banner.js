@@ -4,7 +4,7 @@ export const Banner = () => {
 
     return (
         <div className="image-container">
-            <img src={`/banner.png`} alt="Banner Promocional" className="image"></img>
+            <img src={`${process.env.PUBLIC_URL}/images/banner.png`} alt="Banner Promocional" className="image"></img>
         </div>
     );
 }

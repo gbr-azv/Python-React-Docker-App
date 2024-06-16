@@ -5,8 +5,8 @@ import { useNavigate } from 'react-router-dom';
 export const Card = (props) => {
 
     const backgroundImage = props.backImage === 'promo'
-    ? `${process.env.PUBLIC_URL}/promo-mobile.png` 
-    : `${process.env.PUBLIC_URL}/cadastro.png`;
+    ? `${process.env.PUBLIC_URL}/images/promo-mobile.png` 
+    : `${process.env.PUBLIC_URL}/images/cadastro.png`;
 
     const navigate = useNavigate();
 

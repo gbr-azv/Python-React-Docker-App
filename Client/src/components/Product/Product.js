@@ -11,7 +11,7 @@ export const Product = (props) => {
         <div className="product">
             <div className="img-container">
                 <img 
-                    src='/categories-burguer.webp' 
+                    src={`${process.env.PUBLIC_URL}/menu/${props.image}`} 
                     alt='product' width='100px' 
                     className='product-img'>   
                 </img>

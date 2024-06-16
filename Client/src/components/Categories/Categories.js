@@ -5,10 +5,10 @@ import { useNavigate } from 'react-router-dom';
 export const Categories = (props) => {
 
     const imageUrls = {
-        hamburguer: `${process.env.PUBLIC_URL}/categories-burguer.webp`,
-        sushi: `${process.env.PUBLIC_URL}/categories-sushi.webp`,
-        massas: `${process.env.PUBLIC_URL}/categories-pasta.webp`,
-        drinks: `${process.env.PUBLIC_URL}/categories-drinks.webp`,
+        hamburguer: `${process.env.PUBLIC_URL}/images/categories-burguer.webp`,
+        sushi: `${process.env.PUBLIC_URL}/images/categories-sushi.webp`,
+        massas: `${process.env.PUBLIC_URL}/images/categories-pasta.webp`,
+        drinks: `${process.env.PUBLIC_URL}/images/categories-drinks.webp`,
     };
 
     const backgroundImage = imageUrls[props.id] || '';

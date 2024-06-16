@@ -5,7 +5,7 @@ import LinksFooter from '../LinksFooter';
 export const Footer = (props) => {
 
     const backgroundImage = props.backFooter === 'logon-footer'
-    ? `${process.env.PUBLIC_URL}/footer.png` 
+    ? `${process.env.PUBLIC_URL}/images/footer.png` 
     : '';
 
     return (

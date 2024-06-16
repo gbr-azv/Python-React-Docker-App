@@ -50,7 +50,8 @@ function Menu() {
                         key={index}
                         name={product.name} 
                         description={product.description} 
-                        price={product.price} 
+                        price={product.price}
+                        image={product.image} 
                     />
                     ))
                 ) : (
