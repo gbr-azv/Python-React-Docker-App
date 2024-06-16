@@ -4,6 +4,15 @@ import { useNavigate } from 'react-router-dom';
 
 export const Categories = (props) => {
 
+    const imageUrls = {
+        hamburguer: `${process.env.PUBLIC_URL}/categories-burguer.webp`,
+        sushi: `${process.env.PUBLIC_URL}/categories-sushi.webp`,
+        massas: `${process.env.PUBLIC_URL}/categories-pasta.webp`,
+        drinks: `${process.env.PUBLIC_URL}/categories-drinks.webp`,
+    };
+
+    const backgroundImage = imageUrls[props.id] || '';
+
     const navigate = useNavigate();
 
     const navigateTo = () => {
@@ -13,7 +22,7 @@ export const Categories = (props) => {
 
     return (
         <div className="card" onClick={navigateTo}>
-            <div className={props.id}></div>
+            <div className={props.id} style={{backgroundImage : `url(${backgroundImage})`}}></div>
             <div className="gradient"></div>
             <p className="title">{props.id}</p>
         </div>

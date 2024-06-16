@@ -15,7 +15,6 @@
 }
 
 .logon-footer {
-    background-image: url('http://127.0.0.1:8080/footer.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;

@@ -4,6 +4,10 @@ import { useNavigate } from 'react-router-dom';
 
 export const Card = (props) => {
 
+    const backgroundImage = props.backImage === 'promo'
+    ? `${process.env.PUBLIC_URL}/promo-mobile.png` 
+    : `${process.env.PUBLIC_URL}/cadastro.png`;
+
     const navigate = useNavigate();
 
     function navigateTo (page) {
@@ -17,7 +21,7 @@ export const Card = (props) => {
     }
 
     return (
-        <div className={`cards ${props.backImage}`}>
+        <div className={`cards ${props.backImage}`} style={{backgroundImage: `url(${backgroundImage})`}}>
             <h3 className="header3">{props.header3}</h3>
             <h1 className="header1">{props.header1}</h1>
             <p className="paragraph">{props.paragraph}</p>

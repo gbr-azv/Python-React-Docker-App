@@ -4,8 +4,12 @@ import LinksFooter from '../LinksFooter';
 
 export const Footer = (props) => {
 
+    const backgroundImage = props.backFooter === 'logon-footer'
+    ? `${process.env.PUBLIC_URL}/footer.png` 
+    : '';
+
     return (
-        <div className={`footer ${props.backFooter}`}>
+        <div className={`footer ${props.backFooter}`} style={{backgroundImage: `url(${backgroundImage})`}}>
             <div className="inner-footer">
                 <LinksFooter 
                     title="Contatos"

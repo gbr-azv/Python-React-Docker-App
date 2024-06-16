@@ -38,22 +38,6 @@
     border-radius: 10px;
 }
 
-.hamburguer {
-    background-image: url('http://127.0.0.1:8080/categories-burguer.webp');
-}
-
-.sushi {
-    background-image: url('http://127.0.0.1:8080/categories-sushi.webp');
-}
-
-.massas {
-    background-image: url('http://127.0.0.1:8080/categories-pasta.webp');
-}
-
-.drinks {
-    background-image: url('http://127.0.0.1:8080/categories-drinks.webp');
-}
-
 .gradient {
     position: absolute;
     width: 100%;
