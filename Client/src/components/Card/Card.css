@@ -60,11 +60,11 @@
 }
 
 .cadastro {
-    background-image: url('http://192.168.15.14:8080/cadastro.png');
+    background-image: url('http://127.0.0.1:8080/cadastro.png');
 }
 
 .promo {
-    background-image: url('http://192.168.15.14:8080/promo-mobile.png');
+    background-image: url('http://127.0.0.1:8080/promo-mobile.png');
 }
 
 @media (max-width: 480px) {
@@ -77,11 +77,11 @@
     }
 
     .cadastro {
-        background-image: url('http://192.168.15.14:8080/cadastro-mobile.png');
+        background-image: url('http://127.0.0.1:8080/cadastro-mobile.png');
     }
 
     .promo {
-        background-image: url('http://192.168.15.14:8080/promo-mobile.png');
+        background-image: url('http://127.0.0.1:8080/promo-mobile.png');
     }
 
     .paragraph {

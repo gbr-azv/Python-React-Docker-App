@@ -11,7 +11,7 @@ export const Product = (props) => {
         <div className="product">
             <div className="img-container">
                 <img 
-                    src='http://192.168.15.14:8080/categories-burguer.webp' 
+                    src='/categories-burguer.webp' 
                     alt='product' width='100px' 
                     className='product-img'>   
                 </img>

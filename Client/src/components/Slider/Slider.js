@@ -5,7 +5,7 @@ export const Slider = () => {
 
     return (
         <div className="slider">
-            <Categories id="hamburgueres" />
+            <Categories id="hamburguer" />
             <Categories id="massas" />
             <Categories id="sushi" />
             <Categories id="drinks" />

@@ -27,7 +27,7 @@
     font-weight: bold;
 }
 
-.hamburgueres, .massas, .sushi, .drinks {
+.hamburguer, .massas, .sushi, .drinks {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -38,20 +38,20 @@
     border-radius: 10px;
 }
 
-.hamburgueres {
-    background-image: url('http://192.168.15.14:8080/categories-burguer.webp');
+.hamburguer {
+    background-image: url('http://127.0.0.1:8080/categories-burguer.webp');
 }
 
 .sushi {
-    background-image: url('http://192.168.15.14:8080/categories-sushi.webp');
+    background-image: url('http://127.0.0.1:8080/categories-sushi.webp');
 }
 
 .massas {
-    background-image: url('http://192.168.15.14:8080/categories-pasta.webp');
+    background-image: url('http://127.0.0.1:8080/categories-pasta.webp');
 }
 
 .drinks {
-    background-image: url('http://192.168.15.14:8080/categories-drinks.webp');
+    background-image: url('http://127.0.0.1:8080/categories-drinks.webp');
 }
 
 .gradient {
