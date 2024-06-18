@@ -32,8 +32,8 @@ export const Navbar = () => {
             <div className="links">
                 <Link to="/">Home</Link>
                 <Link to={{pathname:"/cardapio",search:"?search=on-offer"}}>Promoções</Link>
-                <Link to="/">Como Funciona</Link>
-                <Link to="/">Quem Somos</Link>
+                {/* <Link to="/">Como Funciona</Link> */}
+                <Link to="/about">Quem Somos</Link>
             </div>
             <form className="search" onSubmit={navigateTo}>
                 <button type="submit" onSubmit={navigateTo}>
